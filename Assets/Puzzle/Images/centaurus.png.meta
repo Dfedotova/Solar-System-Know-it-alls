@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 7fe84b59f580bb248b0447b8b160d360
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9080093535962602003
+    second: centaurus_0
+  - first:
+      213: 5904778619759606275
+    second: centaurus_1
+  - first:
+      213: 43607503155393106
+    second: centaurus_2
+  - first:
+      213: -715398094120144331
+    second: centaurus_3
+  - first:
+      213: 3987794226644888638
+    second: centaurus_4
+  - first:
+      213: 7786566785734490293
+    second: centaurus_5
+  - first:
+      213: -6410654406738951156
+    second: centaurus_6
+  - first:
+      213: 2165147694429866022
+    second: centaurus_7
+  - first:
+      213: 5225013459222913213
+    second: centaurus_8
+  - first:
+      213: 2440951646851327723
+    second: centaurus_9
+  - first:
+      213: -5770423736333046986
+    second: centaurus_10
+  - first:
+      213: 3903583764547511020
+    second: centaurus_11
+  - first:
+      213: -3146711455889790740
+    second: centaurus_12
+  - first:
+      213: -8795232481317354266
+    second: centaurus_13
+  - first:
+      213: 8701827676178918873
+    second: centaurus_14
+  - first:
+      213: 3166304109327860246
+    second: centaurus_15
+  - first:
+      213: 4378596570626776690
+    second: centaurus_16
+  - first:
+      213: -1397879106114753608
+    second: centaurus_17
+  - first:
+      213: 7129173362911623683
+    second: centaurus_18
+  - first:
+      213: 4200126475543238082
+    second: centaurus_19
+  - first:
+      213: -8753013483218344962
+    second: centaurus_20
+  - first:
+      213: -7380764527717826704
+    second: centaurus_21
+  - first:
+      213: -7607271791744239419
+    second: centaurus_22
+  - first:
+      213: -6406422008025309153
+    second: centaurus_23
+  - first:
+      213: -3275821719901821048
+    second: centaurus_24
+  - first:
+      213: 300978757944336675
+    second: centaurus_25
+  - first:
+      213: 7805460082684933617
+    second: centaurus_26
+  - first:
+      213: 1322763200282276819
+    second: centaurus_27
+  - first:
+      213: -3000489032469676490
+    second: centaurus_28
+  - first:
+      213: -3443336238013181188
+    second: centaurus_29
+  - first:
+      213: 7128963964723626741
+    second: centaurus_30
+  - first:
+      213: 3159490368840566500
+    second: centaurus_31
+  - first:
+      213: 1667223688391395323
+    second: centaurus_32
+  - first:
+      213: -7673944069435355933
+    second: centaurus_33
+  - first:
+      213: -7125865706129678667
+    second: centaurus_34
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: centaurus_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 543
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba3646e06e2e1a40a2969cfdf32d03b
+      internalID: -9080093535962602003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 543
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926cd14a269bd374d83dccbff67f291e
+      internalID: 5904778619759606275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 543
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6529189a49e1a294fa4804b6d75c2aea
+      internalID: 43607503155393106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 543
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592ab7a5c3c48e24786ca87ba8d27c86
+      internalID: -715398094120144331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 543
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10b5d8f40df65c479bc35b4de91f8aa
+      internalID: 3987794226644888638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 543
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64963b4a5b9cbd645b4553a419fc4d3c
+      internalID: 7786566785734490293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_6
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 543
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd2f530ff485ce458a0f7b141ac77de
+      internalID: -6410654406738951156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 408
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b383458ad3b410a4c987c3f50434f076
+      internalID: 2165147694429866022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_8
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 408
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bc41fed234e0c448a009e374572af8
+      internalID: 5225013459222913213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 408
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ea21d1aa5743149985371942c5a9cc
+      internalID: 2440951646851327723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 408
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd432e91fdf8c04598d34f57c52f8bc
+      internalID: -5770423736333046986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_11
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 408
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a126fd820258cc14a8b31012c3ad27f1
+      internalID: 3903583764547511020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_12
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 408
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e280a20660ff6d43a2a84aed26f14df
+      internalID: -3146711455889790740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_13
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 408
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce7ed572c8555746b4c48e03c938bb2
+      internalID: -8795232481317354266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 273
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d371190d68fb1a14da482a76662320e8
+      internalID: 8701827676178918873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_15
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 273
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9456674a8dc8a67498deace28b8d7a8a
+      internalID: 3166304109327860246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_16
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 273
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8237d3651430b604789822bedd942aa9
+      internalID: 4378596570626776690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 273
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955d3e67e98fa964680861b4b48aea47
+      internalID: -1397879106114753608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_18
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 273
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7452fd18602343e41acfa60ed51c61d3
+      internalID: 7129173362911623683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_19
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 273
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491c63d40404bfd43a58d577b5093ae6
+      internalID: 4200126475543238082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_20
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 273
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d937f41c3e0f64599fa7a40b5c42bf
+      internalID: -8753013483218344962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 138
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1f2a6406b7c7946aab6b733d72ef9a
+      internalID: -7380764527717826704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_22
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 138
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491ea18144bb8b84aa52a64a01886fa5
+      internalID: -7607271791744239419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_23
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 138
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c24d79660538b044843f8caa989da40
+      internalID: -6406422008025309153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_24
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 138
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b6bbd65755ce24da6e7e8c597d076d
+      internalID: -3275821719901821048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_25
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 138
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fb11dcca87d534aa9812a4bcb99795
+      internalID: 300978757944336675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_26
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 138
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be80c7c1e36b7947ab732d2b7d03632
+      internalID: 7805460082684933617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_27
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 138
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e292d154b2514a947b9cfc00ce6c8473
+      internalID: 1322763200282276819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_28
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339fffbcc33006e45a5571b4a10e659f
+      internalID: -3000489032469676490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_29
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85868c87d482e8c4f916ea0ddd45d577
+      internalID: -3443336238013181188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_30
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 3
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5240a54e90b88408897653f3319973
+      internalID: 7128963964723626741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_31
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 3
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c61ec9504428ba488ddf61ed052c38c
+      internalID: 3159490368840566500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa99cef1a44f7f4386a997c0f8cd446
+      internalID: 1667223688391395323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_33
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 3
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b505b7c81bdc94e8b5b02d727c1614
+      internalID: -7673944069435355933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: centaurus_34
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 3
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4beafadd4c17d6240a4f33e55eb2f5ac
+      internalID: -7125865706129678667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9b36b21f5bb0d2d4f8b5c094f36c0da3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
