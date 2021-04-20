@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8228c45c2a7fd348bab7ad769143e1a, type: 3}
+  m_Name: Puzzle2
+  m_EditorClassIdentifier: 
+  timeInSeconds: 0
+  columns: 8
+  rows: 6
+  board:
+  - size: 6
+    row:
+    - "\u041A"
+    - "\u041E"
+    - "\u041C"
+    - "\u0415"
+    - "\u0422"
+    - "\u0410"
+  - size: 6
+    row:
+    - "\u041E"
+    - "\u0427"
+    - "\u041F"
+    - "\u041A"
+    - "\u042F"
+    - "\u0425"
+  - size: 6
+    row:
+    - "\u0421"
+    - "\u0415"
+    - "\u041B"
+    - "\u042E"
+    - "\u041C"
+    - "\u0410"
+  - size: 6
+    row:
+    - "\u041C"
+    - "\u0419"
+    - "\u0410"
+    - "\u0427"
+    - "\u0414"
+    - "\u0411"
+  - size: 6
+    row:
+    - "\u041E"
+    - "\u0401"
+    - "\u041D"
+    - "\u0417"
+    - "\u0414"
+    - "\u0426"
+  - size: 6
+    row:
+    - "\u0421"
+    - "\u0424"
+    - "\u0415"
+    - "\u0420"
+    - "\u0410"
+    - "\u0418"
+  - size: 6
+    row:
+    - "\u042C"
+    - "\u0412"
+    - "\u0422"
+    - "\u041A"
+    - "\u041F"
+    - "\u041A"
+  - size: 6
+    row:
+    - "\u0417"
+    - "\u041A"
+    - "\u0410"
+    - "\u042F"
+    - "\u0412"
+    - "\u041B"
+  searchWords:
+  - word: "\u041A\u041E\u0421\u041C\u041E\u0421"
+  - word: "\u041F\u041B\u0410\u041D\u0415\u0422\u0410"
+  - word: "\u0417\u0412\u0415\u0417\u0414\u0410"
+  - word: "\u041A\u041E\u041C\u0415\u0422\u0410"
+  - word: "\u0421\u0424\u0415\u0420\u0410"
+  - word: "\u0426\u0418\u041A\u041B"
+  - word: "\u041E\u0421\u042C"

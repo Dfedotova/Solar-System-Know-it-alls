@@ -13,7 +13,7 @@ public class NodePiece : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [HideInInspector] public Vector2 position;
 
     [HideInInspector] public RectTransform rect;
-    
+
     private bool _updating;
     private Image _img;
 
@@ -37,17 +37,17 @@ public class NodePiece : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         position = new Vector2(-258 + (40 * index.x), 158 - (40 * index.y));
     }
-    
+
     public void MovePosition(Vector2 move)
     {
-        rect.anchoredPosition += move * Time.deltaTime * 16f; 
+        rect.anchoredPosition += move * Time.deltaTime * 16f;
     }
 
     public void MovePositionTo(Vector2 move)
     {
-        rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, move, Time.deltaTime * 16f); 
+        rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, move, Time.deltaTime * 16f);
     }
-    
+
     private void UpdateName()
     {
         transform.name = "Node [" + index.x + ", " + index.y + "]";
@@ -71,7 +71,7 @@ public class NodePiece : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if(_updating) return;
+        if (_updating) return;
         MovePieces.Instance.MovePiece(this);
     }
 

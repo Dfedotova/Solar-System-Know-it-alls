@@ -2,7 +2,7 @@
 using System;
 
 [Serializable]
-public class ArrayLayout 
+public class ArrayLayout
 {
     [Serializable]
     public struct RowData

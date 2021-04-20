@@ -32,7 +32,7 @@ public class Point
     public static Point FromVector(Vector3 vector) => new Point((int) vector.x, (int) vector.y);
 
     public static Point Multiply(Point point, int n) => new Point(point.x * n, point.y * n);
-    
+
     public static Point Clone(Point point) => new Point(point.x, point.y);
 
     public static Point Add(Point p1, Point p2) => new Point(p1.x + p2.x, p1.y + p2.y);

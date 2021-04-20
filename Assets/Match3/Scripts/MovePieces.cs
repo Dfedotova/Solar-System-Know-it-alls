@@ -31,7 +31,7 @@ public class MovePieces : MonoBehaviour
 
             _newIndex = Point.Clone(_moving.index);
             Point add = Point.Zero;
-            if (direction.magnitude > -258) 
+            if (direction.magnitude > -258)
             {
                 if (aDirection.x > aDirection.y)
                     add = new Point(nDirection.x > 0 ? 1 : -1, 0);
@@ -42,7 +42,7 @@ public class MovePieces : MonoBehaviour
             _newIndex.Add(add);
             Vector2 position = _game.GetPositionFromPoint(_moving.index);
             if (!_newIndex.Equals(_moving.index))
-                position += Point.Multiply(new Point(add.x, -add.y), 16).ToVector(); 
+                position += Point.Multiply(new Point(add.x, -add.y), 16).ToVector();
             _moving.MovePositionTo(position);
         }
     }
@@ -57,12 +57,12 @@ public class MovePieces : MonoBehaviour
     public void DropPiece()
     {
         if (_moving == null) return;
-        
+
         if (!_newIndex.Equals(_moving.index))
             _game.FlipPieces(_moving.index, _newIndex, true);
         else
             _game.ResetPiece(_moving);
-        
+
         _moving = null;
     }
 }

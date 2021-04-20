@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8228c45c2a7fd348bab7ad769143e1a, type: 3}
+  m_Name: Puzzle1
+  m_EditorClassIdentifier: 
+  timeInSeconds: 0
+  columns: 5
+  rows: 5
+  board:
+  - size: 5
+    row:
+    - "\u041B"
+    - "\u0423"
+    - "\u041D"
+    - "\u0410"
+    - "\u0417"
+  - size: 5
+    row:
+    - "\u0416"
+    - "\u041B"
+    - "\u0424"
+    - "\u0420"
+    - "\u0415"
+  - size: 5
+    row:
+    - "\u041E"
+    - "\u042F"
+    - "\u0427"
+    - "\u042B"
+    - "\u041C"
+  - size: 5
+    row:
+    - "\u041A"
+    - "\u0421"
+    - "\u0418"
+    - "\u0414"
+    - "\u041B"
+  - size: 5
+    row:
+    - "\u0428"
+    - "\u041E"
+    - "\u0420"
+    - "\u0414"
+    - "\u042F"
+  searchWords:
+  - word: "\u041B\u0423\u041D\u0410"
+  - word: "\u0417\u0415\u041C\u041B\u042F"
+  - word: "\u041D\u041B\u041E"
+  - word: "\u0414\u042B\u0420\u0410"
+  - word: "\u042F\u0414\u0420\u041E"
+  - word: "\u0414\u0418\u0421\u041A"

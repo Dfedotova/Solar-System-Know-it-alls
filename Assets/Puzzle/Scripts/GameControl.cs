@@ -5,14 +5,11 @@ using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
-    [SerializeField] 
-    private Transform[] pictures;
+    [SerializeField] private Transform[] pictures;
 
-    [SerializeField] 
-    private GameObject winImage;
-    
-    [SerializeField] 
-    private int size;
+    [SerializeField] private GameObject winImage;
+
+    [SerializeField] private int size;
 
     public static bool Win;
 
