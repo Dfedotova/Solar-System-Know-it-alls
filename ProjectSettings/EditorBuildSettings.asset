@@ -53,4 +53,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Search Words/Scenes/SearchWords lvl3.unity
     guid: bff7be0ef0aa47c44b0a25b71bdb6f66
+  - enabled: 1
+    path: Assets/Pair Matching/Scenes/Levels Pair Matching.unity
+    guid: 47f730628b440514086862129af38b94
+  - enabled: 1
+    path: Assets/Pair Matching/Scenes/Pair Matching lvl 1.unity
+    guid: de6bb0092bc4fd940a0d31ff5c9e71f1
+  - enabled: 1
+    path: Assets/Pair Matching/Scenes/Pair Matching lvl 2.unity
+    guid: 94448935f7401e2458485accf904c956
+  - enabled: 1
+    path: Assets/Pair Matching/Scenes/Pair Matching lvl 3.unity
+    guid: a750472ef04569d4b871c037a9824527
   m_configObjects: {}
