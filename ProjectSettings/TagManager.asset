@@ -15,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - InfoPanel
   - 
   - 
   - 
@@ -53,4 +53,7 @@ TagManager:
     locked: 0
   - name: Platform
     uniqueID: 1684139067
+    locked: 0
+  - name: InfoPanel
+    uniqueID: 485473235
     locked: 0

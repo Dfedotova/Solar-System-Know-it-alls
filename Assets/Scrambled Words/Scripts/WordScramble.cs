@@ -41,6 +41,8 @@ public class WordScramble : MonoBehaviour
     public float space;
     public float lerpSpeed = 5;
     public Text scoresText;
+    public GameObject infoPanel;
+    public GameObject exitPanel;
 
     private List<CharObject> _charObjects = new List<CharObject>();
     private CharObject _firstSelected;
@@ -57,6 +59,8 @@ public class WordScramble : MonoBehaviour
 
     void Start()
     {
+        infoPanel.SetActive(false);
+        exitPanel.SetActive(false);
         ShowScramble(currentWord);
     }
 

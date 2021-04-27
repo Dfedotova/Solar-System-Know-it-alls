@@ -12,12 +12,25 @@ public class WordsGrid : MonoBehaviour
     public float topPosition;
     public int level;
 
+    public GameObject infoPanel;
+
     private List<GameObject> _squareList = new List<GameObject>();
 
     void Start()
     {
+        DeactivateInfoPanel();
         SpawnGridSquares();
         SetSquaresPosition();
+    }
+    
+    public void ActivateInfoPanel()
+    {
+        infoPanel.SetActive(true);
+    }
+    
+    public void DeactivateInfoPanel()
+    {
+        infoPanel.SetActive(false);
     }
 
     private void SetSquaresPosition()

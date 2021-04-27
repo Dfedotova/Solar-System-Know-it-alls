@@ -10,6 +10,6 @@ public class ArrayLayout
         public bool[] row;
     }
 
-    public Grid grid;
-    public RowData[] rows = new RowData[14]; // Grid 7x7
+    //public Grid grid;
+    public RowData[] rows = new RowData[14]; 
 }

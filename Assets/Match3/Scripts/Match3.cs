@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Text;
+using UnityEngine.UI;
 using Random = System.Random;
 
 public class Match3 : MonoBehaviour
@@ -12,9 +13,15 @@ public class Match3 : MonoBehaviour
     [Header("UI Elements")] public Sprite[] pieces;
     public RectTransform gameBoard;
     public RectTransform killedBoard;
+    public GameObject infoPanel;
+    public GameObject exitPanel;
 
     [Header("Prefabs")] public GameObject nodePiece;
     public GameObject killedPiece;
+
+    [Header("Level Info")] 
+    public int highScore;
+    public Text scoreText;
 
     private const int Width = 14;
     private const int Height = 9;
@@ -25,11 +32,14 @@ public class Match3 : MonoBehaviour
     private List<FlippedPieces> _flipped;
     private List<NodePiece> _dead;
     private List<KilledPiece> _killed;
+    private int score;
 
     private Random _random;
 
     private void Start()
     {
+        infoPanel.SetActive(false);
+        exitPanel.SetActive(false);
         StartGame();
     }
 
@@ -92,6 +102,15 @@ public class Match3 : MonoBehaviour
                     {
                         nodePiece.gameObject.SetActive(false);
                         _dead.Add(nodePiece);
+                        score += 10;
+                        highScore -= 10;
+                        scoreText.text = score.ToString();
+
+                        // TODO
+                        if (highScore <= 0)
+                        {
+                            Debug.Log("Game over!");
+                        }
                     }
 
                     node.SetPiece(null);
@@ -433,14 +452,6 @@ public class Match3 : MonoBehaviour
 [Serializable]
 public class Node
 {
-    /* 0 - blank
-     1 - Mercury
-     2 - Neptune
-     3 - Saturn
-     4 - Mars
-     5 - Asteroid
-     6 - Black hole
-     */
     public int value;
     public Point index;
     private NodePiece _piece;

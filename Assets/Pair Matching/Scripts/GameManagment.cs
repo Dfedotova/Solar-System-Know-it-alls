@@ -14,8 +14,16 @@ public class GameManagment : MonoBehaviour
     public Text matchText;
 
     [SerializeField] private int matches;
+    [SerializeField] private GameObject infoPanel;
+    [SerializeField] private GameObject exitPanel;
 
     private bool init = false;
+
+    void Start()
+    {
+        infoPanel.SetActive(false);
+        exitPanel.SetActive(false);
+    }
 
     void Update()
     {

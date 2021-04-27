@@ -11,11 +11,6 @@ public class SearchingWord : MonoBehaviour
 
     private string _word;
 
-    void Start()
-    {
-        
-    }
-
     private void OnEnable()
     {
         GameEvents.OnCorrectWord += CorrectWord;

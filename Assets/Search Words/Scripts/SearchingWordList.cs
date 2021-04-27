@@ -176,7 +176,7 @@ public class SearchingWordList : MonoBehaviour
 
         startPosition.x = ((parentRect.rect.width - squareSize.x) / 2) * (-1);
         startPosition.x += shiftBy;
-        startPosition.y = ((parentRect.rect.height - squareSize.y) / 2);
+        startPosition.y = (parentRect.rect.height - squareSize.y) / 2;
 
         return startPosition / 30; // TODO
     }
