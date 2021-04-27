@@ -88,7 +88,7 @@ public class Manager : MonoBehaviour
         bool isCorrect = CheckAnswers();
         _finishedQuestions.Add(currentQuestion);
 
-        score += isCorrect ? 20 : -10;
+        score += isCorrect ? 20 : score > 0 ? -10 : 0;
         scoreText.text = score.ToString();
 
         // TODO

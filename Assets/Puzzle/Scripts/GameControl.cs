@@ -6,9 +6,7 @@ using UnityEngine;
 public class GameControl : MonoBehaviour
 {
     [SerializeField] private Transform[] pictures;
-
-    [SerializeField] private GameObject winImage;
-
+    
     [SerializeField] private int size;
 
     public static bool Win;
@@ -16,7 +14,6 @@ public class GameControl : MonoBehaviour
     private void Start()
     {
         Win = false;
-        winImage.SetActive(false);
     }
 
     private void Update()
@@ -24,7 +21,7 @@ public class GameControl : MonoBehaviour
         if (CheckRotation())
         {
             Win = true;
-            winImage.SetActive(true);
+            Debug.Log("Game over!"); // TODO
         }
     }
 
