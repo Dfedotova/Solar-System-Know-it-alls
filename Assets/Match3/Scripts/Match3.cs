@@ -15,6 +15,7 @@ public class Match3 : MonoBehaviour
     public RectTransform killedBoard;
     public GameObject infoPanel;
     public GameObject exitPanel;
+    public GameObject pausePanel;
 
     [Header("Prefabs")] public GameObject nodePiece;
     public GameObject killedPiece;
@@ -40,6 +41,7 @@ public class Match3 : MonoBehaviour
     {
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
+        pausePanel.SetActive(false);
         StartGame();
     }
 

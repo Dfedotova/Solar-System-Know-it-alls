@@ -17,6 +17,7 @@ public class Manager : MonoBehaviour
     [SerializeField] private int level;
     [SerializeField] private GameObject infoPanel;
     [SerializeField] private GameObject exitPanel;
+    [SerializeField] private GameObject pausePanel;
 
     private List<AnswerData> _pickedAnswers = new List<AnswerData>();
     private List<int> _finishedQuestions = new List<int>();
@@ -31,6 +32,7 @@ public class Manager : MonoBehaviour
     {
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
+        pausePanel.SetActive(false);
         
         LoadQuestions();
 

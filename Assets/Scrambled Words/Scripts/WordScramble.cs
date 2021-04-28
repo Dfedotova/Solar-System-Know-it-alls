@@ -43,6 +43,7 @@ public class WordScramble : MonoBehaviour
     public Text scoresText;
     public GameObject infoPanel;
     public GameObject exitPanel;
+    public GameObject pausePanel;
 
     private List<CharObject> _charObjects = new List<CharObject>();
     private CharObject _firstSelected;
@@ -61,6 +62,7 @@ public class WordScramble : MonoBehaviour
     {
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
+        pausePanel.SetActive(false);
         ShowScramble(currentWord);
     }
 

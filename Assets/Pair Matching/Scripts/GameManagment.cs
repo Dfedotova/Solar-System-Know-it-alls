@@ -16,6 +16,7 @@ public class GameManagment : MonoBehaviour
     [SerializeField] private int matches;
     [SerializeField] private GameObject infoPanel;
     [SerializeField] private GameObject exitPanel;
+    [SerializeField] private GameObject pausePanel;
 
     private bool init = false;
 
@@ -23,6 +24,7 @@ public class GameManagment : MonoBehaviour
     {
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
+        pausePanel.SetActive(false);
     }
 
     void Update()
