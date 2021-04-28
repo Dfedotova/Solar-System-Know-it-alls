@@ -15,6 +15,7 @@ public class WordsGrid : MonoBehaviour
     public GameObject infoPanel;
     public GameObject exitPanel;
     public GameObject pausePanel;
+    public GameObject gameOverPanel;
 
     private List<GameObject> _squareList = new List<GameObject>();
 
@@ -23,6 +24,7 @@ public class WordsGrid : MonoBehaviour
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
         pausePanel.SetActive(false);
+        gameOverPanel.SetActive(false);
         
         SpawnGridSquares();
         SetSquaresPosition();

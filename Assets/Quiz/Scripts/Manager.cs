@@ -14,10 +14,12 @@ public class Manager : MonoBehaviour
 
     [SerializeField] private Events events = null;
     [SerializeField] private Text scoreText;
+    [SerializeField] private Text levelScoreText;
     [SerializeField] private int level;
     [SerializeField] private GameObject infoPanel;
     [SerializeField] private GameObject exitPanel;
     [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject gameOverPanel;
 
     private List<AnswerData> _pickedAnswers = new List<AnswerData>();
     private List<int> _finishedQuestions = new List<int>();
@@ -33,6 +35,7 @@ public class Manager : MonoBehaviour
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
         pausePanel.SetActive(false);
+        gameOverPanel.SetActive(false);
         
         LoadQuestions();
 
@@ -93,10 +96,10 @@ public class Manager : MonoBehaviour
         score += isCorrect ? 20 : score > 0 ? -10 : 0;
         scoreText.text = score.ToString();
 
-        // TODO
         if (IsFinished)
         {
-            Debug.Log("Game over!");
+            gameOverPanel.SetActive(true);
+            levelScoreText.text = "Ты набрал " + score +" очков!";
         }
 
         if (IE_WaitTillNextRound != null)

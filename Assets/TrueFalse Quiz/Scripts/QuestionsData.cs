@@ -7,6 +7,9 @@ public class QuestionsData : MonoBehaviour
 {
     public Questions questions;
     [SerializeField] private Text questionText;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text levelScoreText;
+    [SerializeField] private GameObject gameOverPanel;
 
     void Start()
     {
@@ -19,7 +22,8 @@ public class QuestionsData : MonoBehaviour
         {
             questionText.text = string.Empty;
             ClearQuestions();
-            Debug.Log("Game over!"); // TODO
+            gameOverPanel.SetActive(true);
+            levelScoreText.text = "Ты набрал " + scoreText.text + " очков!";
             return;
         }
 
@@ -33,7 +37,7 @@ public class QuestionsData : MonoBehaviour
         questions.questionsList[questions.currentQuestion].questioned = true;
         questionText.text = questions.questionsList[questions.currentQuestion].question;
     }
-    
+
     private void ClearQuestions()
     {
         foreach (var question in questions.questionsList)

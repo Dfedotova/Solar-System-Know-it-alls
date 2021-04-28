@@ -12,24 +12,29 @@ public class GameManagment : MonoBehaviour
     public Sprite cardBack;
     public GameObject[] cards;
     public Text matchText;
+    public Text levelScoreText;
 
     [SerializeField] private int matches;
     [SerializeField] private GameObject infoPanel;
     [SerializeField] private GameObject exitPanel;
     [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject gameOverPanel;
 
-    private bool init = false;
+    private bool _init = false;
+    private int _matchesTmp;
 
     void Start()
     {
+        _matchesTmp = matches;
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
         pausePanel.SetActive(false);
+        gameOverPanel.SetActive(false);
     }
 
     void Update()
     {
-        if (!init)
+        if (!_init)
             InitializeCards();
 
         if (Input.GetMouseButtonUp(0))
@@ -59,8 +64,8 @@ public class GameManagment : MonoBehaviour
         foreach (GameObject c in cards)
             c.GetComponent<CardManager>().SetUpGraphics();
 
-        if (!init)
-            init = true;
+        if (!_init)
+            _init = true;
     }
 
     public Sprite GetCardBack() => cardBack;
@@ -93,7 +98,10 @@ public class GameManagment : MonoBehaviour
             matches--;
             matchText.text = matches.ToString();
             if (matches == 0)
-                SceneManager.LoadScene("Levels Pair Matching"); // TODO поменять потом на сцену "Конец игры"
+            {
+                gameOverPanel.SetActive(true);
+                levelScoreText.text = "Ты набрал " + _matchesTmp * 100 + " очков!";
+            }
         }
 
         for (int i = 0; i < c.Count; i++)

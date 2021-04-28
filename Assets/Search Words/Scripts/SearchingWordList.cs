@@ -1,9 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SearchingWordList : MonoBehaviour
 {
+    public GameObject gameOverPanel;
+    public Text scoreText;
+    public Text levelScoreText;
     public GameData currentGameData;
     public GameObject searchingWordPrefab;
     public float offset = 0.0f;
@@ -22,11 +27,20 @@ public class SearchingWordList : MonoBehaviour
 
         if (_wordsNumber < _columns)
             _rows = 1;
-        else 
+        else
             CalculateColumnsAndRowsNumber();
-        
+
         CreateWordObjects();
         SetWordsPosition();
+    }
+
+    private void Update()
+    {
+        if (int.Parse(scoreText.text) / 40 == _wordsNumber)
+        {
+            gameOverPanel.SetActive(true);
+            levelScoreText.text = "Ты набрал " + scoreText.text + " очков!";
+        }
     }
 
     private void CalculateColumnsAndRowsNumber()
@@ -82,13 +96,6 @@ public class SearchingWordList : MonoBehaviour
         var finalScale = defaultScale;
 
         var adjustment = 4.5f;
-        // TODO
-        /*if (level == 1)
-            adjustment = 4.5f;
-        else if (level == 2)
-            adjustment = 3.5f;
-        else if (level == 3)
-            adjustment = 2.5f;*/
 
         while (ShouldScaleDown(finalScale))
         {
@@ -110,7 +117,7 @@ public class SearchingWordList : MonoBehaviour
     {
         var squareRect = searchingWordPrefab.GetComponent<RectTransform>();
         var parentRect = this.GetComponent<RectTransform>();
-        
+
         var squareSize = new Vector2(0f, 0f);
         squareSize.x = squareRect.rect.width * targetScale.x + offset;
         squareSize.y = squareRect.rect.height * targetScale.y + offset;
@@ -161,18 +168,18 @@ public class SearchingWordList : MonoBehaviour
             columnNumber++;
         }
     }
-    
+
     private Vector2 GetFirstSquarePosition()
     {
         var startPosition = new Vector2(0f, transform.position.y);
         var squareRect = _words[0].GetComponent<RectTransform>();
         var parentRect = this.GetComponent<RectTransform>();
         var squareSize = new Vector2(0f, 0f);
- 
+
         squareSize.x = squareRect.rect.width * squareRect.transform.localScale.x + offset; // TODO мб убрать оффсет
         squareSize.y = squareRect.rect.height * squareRect.transform.localScale.y + offset;
-        
-        var shiftBy = (parentRect.rect.width - (squareSize.x * _columns)) / 2 ;
+
+        var shiftBy = (parentRect.rect.width - (squareSize.x * _columns)) / 2;
 
         startPosition.x = ((parentRect.rect.width - squareSize.x) / 2) * (-1);
         startPosition.x += shiftBy;

@@ -41,9 +41,11 @@ public class WordScramble : MonoBehaviour
     public float space;
     public float lerpSpeed = 5;
     public Text scoresText;
+    public Text levelScoreText;
     public GameObject infoPanel;
     public GameObject exitPanel;
     public GameObject pausePanel;
+    public GameObject gameOverPanel;
 
     private List<CharObject> _charObjects = new List<CharObject>();
     private CharObject _firstSelected;
@@ -63,6 +65,7 @@ public class WordScramble : MonoBehaviour
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
         pausePanel.SetActive(false);
+        gameOverPanel.SetActive(false);
         ShowScramble(currentWord);
     }
 
@@ -98,9 +101,11 @@ public class WordScramble : MonoBehaviour
         foreach (Transform child in container)
             Destroy(child.gameObject);
 
+
         if (index > words.Length - 1)
         {
-            Debug.LogError("Index out of range!"); // TODO экран "Конец игры"
+            gameOverPanel.SetActive(true);
+            levelScoreText.text = "Ты набрал " + _scores + " очков!";
             return;
         }
 

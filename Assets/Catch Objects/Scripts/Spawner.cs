@@ -15,12 +15,14 @@ public class Spawner : MonoBehaviour
     public GameObject infoPanel;
     public GameObject exitPanel;
     public GameObject pausePanel;
+    public GameObject gameOverPanel;
 
     void Start()
     {
         DeactivatePanel(infoPanel);
         DeactivatePanel(exitPanel);
         DeactivatePanel(pausePanel);
+        DeactivatePanel(gameOverPanel);
         
         StartCoroutine(SpawnRandomObject());
     }

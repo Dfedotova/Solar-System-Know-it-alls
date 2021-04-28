@@ -2,13 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WordChecker : MonoBehaviour
 {
     public GameData currentGameData;
+    public Text scoreText;
 
     private string _word;
 
+    private int _score;
     private int _assignedPoints = 0;
     private int _completedWords = 0;
     private Ray _rayUp, _rayDown;
@@ -107,6 +110,8 @@ public class WordChecker : MonoBehaviour
             if (_word == searchingWord.word)
             {
                 GameEvents.CorrectWordMethod(_word, _correctSquareList);
+                _score += 40;
+                scoreText.text = _score.ToString();
                 _word = string.Empty;
                 _correctSquareList.Clear();
                 return;

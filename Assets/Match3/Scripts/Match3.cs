@@ -16,6 +16,7 @@ public class Match3 : MonoBehaviour
     public GameObject infoPanel;
     public GameObject exitPanel;
     public GameObject pausePanel;
+    public GameObject gameOverPanel;
 
     [Header("Prefabs")] public GameObject nodePiece;
     public GameObject killedPiece;
@@ -23,6 +24,7 @@ public class Match3 : MonoBehaviour
     [Header("Level Info")] 
     public int highScore;
     public Text scoreText;
+    public Text levelScoreText;
 
     private const int Width = 14;
     private const int Height = 9;
@@ -33,7 +35,7 @@ public class Match3 : MonoBehaviour
     private List<FlippedPieces> _flipped;
     private List<NodePiece> _dead;
     private List<KilledPiece> _killed;
-    private int score;
+    private int _score;
 
     private Random _random;
 
@@ -42,6 +44,7 @@ public class Match3 : MonoBehaviour
         infoPanel.SetActive(false);
         exitPanel.SetActive(false);
         pausePanel.SetActive(false);
+        gameOverPanel.SetActive(false);
         StartGame();
     }
 
@@ -104,14 +107,15 @@ public class Match3 : MonoBehaviour
                     {
                         nodePiece.gameObject.SetActive(false);
                         _dead.Add(nodePiece);
-                        score += 10;
+                        _score += 10;
                         highScore -= 10;
-                        scoreText.text = score.ToString();
+                        scoreText.text = _score.ToString();
 
                         // TODO
                         if (highScore <= 0)
                         {
-                            Debug.Log("Game over!");
+                            gameOverPanel.SetActive(true);
+                            levelScoreText.text = "Ты набрал " + _score + " очков!";
                         }
                     }
 
