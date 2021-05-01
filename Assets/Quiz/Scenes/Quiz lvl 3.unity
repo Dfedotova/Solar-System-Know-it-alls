@@ -3669,6 +3669,7 @@ GameObject:
   - component: {fileID: 2060632902}
   - component: {fileID: 2060632904}
   - component: {fileID: 2060632903}
+  - component: {fileID: 2060632905}
   m_Layer: 5
   m_Name: Game Over Scene
   m_TagString: Untagged
@@ -3738,6 +3739,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060632901}
   m_CullTransparentMesh: 1
+--- !u!114 &2060632905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060632901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05e9eaf55c69b5478e564b05eb017bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalScore: {fileID: 1710075079}
+  gameScore: {fileID: 350077566}
 --- !u!1 &2081693743
 GameObject:
   m_ObjectHideFlags: 0

@@ -383,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 901902835}
   levelScoreText: {fileID: 61525232}
+  generalScoreText: {fileID: 0}
   infoPanel: {fileID: 1210391546}
   exitPanel: {fileID: 1451708441}
   pausePanel: {fileID: 234342368}
@@ -1889,6 +1890,7 @@ GameObject:
   - component: {fileID: 988834493}
   - component: {fileID: 988834495}
   - component: {fileID: 988834494}
+  - component: {fileID: 988834496}
   m_Layer: 5
   m_Name: Game Over Scene
   m_TagString: Untagged
@@ -1958,6 +1960,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988834492}
   m_CullTransparentMesh: 1
+--- !u!114 &988834496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988834492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05e9eaf55c69b5478e564b05eb017bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalScore: {fileID: 61525232}
+  gameScore: {fileID: 817024042}
 --- !u!1 &1053161433
 GameObject:
   m_ObjectHideFlags: 0

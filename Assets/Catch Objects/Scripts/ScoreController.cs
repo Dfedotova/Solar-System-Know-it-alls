@@ -8,12 +8,13 @@ public class ScoreController : MonoBehaviour
 {
     public Text scoreText;
     public Text levelScoreText;
+    public Text generalScoreText;
     public GameObject infoPanel;
     public GameObject exitPanel;
     public GameObject pausePanel;
     public GameObject gameOverPanel;
     public Spawner spawner;
-
+    
     private int score;
 
     void Update()
@@ -33,6 +34,8 @@ public class ScoreController : MonoBehaviour
         {
             spawner.ActivatePanel(gameOverPanel);
             levelScoreText.text = "Ты набрал " + score + " очков!";
+            /*counter.(counter.GeneralScore + score);
+            generalScoreText.text = counter.GeneralScore.ToString();*/
         }
     }
 

@@ -5435,6 +5435,7 @@ GameObject:
   - component: {fileID: 1563110006}
   - component: {fileID: 1563110005}
   - component: {fileID: 1563110004}
+  - component: {fileID: 1563110007}
   m_Layer: 5
   m_Name: Game Over Scene
   m_TagString: Untagged
@@ -5504,6 +5505,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1563110007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563110003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05e9eaf55c69b5478e564b05eb017bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalScore: {fileID: 201741052}
+  gameScore: {fileID: 1255745736}
 --- !u!1 &1649838437
 GameObject:
   m_ObjectHideFlags: 0
