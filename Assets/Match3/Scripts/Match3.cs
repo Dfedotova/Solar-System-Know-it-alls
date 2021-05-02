@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Text;
@@ -21,8 +20,7 @@ public class Match3 : MonoBehaviour
     [Header("Prefabs")] public GameObject nodePiece;
     public GameObject killedPiece;
 
-    [Header("Level Info")] 
-    public int highScore;
+    [Header("Level Info")] public int highScore;
     public Text scoreText;
     public Text levelScoreText;
 
@@ -111,7 +109,6 @@ public class Match3 : MonoBehaviour
                         highScore -= 10;
                         scoreText.text = _score.ToString();
 
-                        // TODO
                         if (highScore <= 0)
                         {
                             gameOverPanel.SetActive(true);
@@ -233,7 +230,9 @@ public class Match3 : MonoBehaviour
     }
 
     private int GetValueAtPoint(Point point) =>
-        point.x < 0 || point.x >= Width || point.y < 0 || point.y >= Height ? -1 : _board[point.x, point.y].value;
+        point.x < 0 || point.x >= Width || point.y < 0 || point.y >= Height
+            ? -1
+            : _board[point.x, point.y].value;
 
     List<Point> IsConnected(Point point, bool main)
     {
@@ -495,9 +494,8 @@ public class FlippedPieces
     {
         if (piece == one)
             return two;
-        else if (piece == two)
+        if (piece == two)
             return one;
-        else
-            return null;
+        return null;
     }
 }

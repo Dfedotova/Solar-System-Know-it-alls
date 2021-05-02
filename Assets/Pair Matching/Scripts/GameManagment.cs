@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GameManagment : MonoBehaviour
@@ -13,12 +10,11 @@ public class GameManagment : MonoBehaviour
     public GameObject[] cards;
     public Text matchText;
     public Text levelScoreText;
-
-    [SerializeField] private int matches;
-    [SerializeField] private GameObject infoPanel;
-    [SerializeField] private GameObject exitPanel;
-    [SerializeField] private GameObject pausePanel;
-    [SerializeField] private GameObject gameOverPanel;
+    public int matches;
+    public GameObject infoPanel;
+    public GameObject exitPanel;
+    public GameObject pausePanel;
+    public GameObject gameOverPanel;
 
     private bool _init = false;
     private int _matchesTmp;
@@ -92,7 +88,8 @@ public class GameManagment : MonoBehaviour
 
         int x = 0;
 
-        if (cards[c[0]].GetComponent<CardManager>().CardValue == cards[c[1]].GetComponent<CardManager>().CardValue)
+        if (cards[c[0]].GetComponent<CardManager>().CardValue == cards[c[1]].
+            GetComponent<CardManager>().CardValue)
         {
             x = 2;
             matches--;

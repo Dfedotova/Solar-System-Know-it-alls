@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEditor;
@@ -8,7 +6,7 @@ using UnityEditorInternal;
 
 [CustomEditor(typeof(BoardData), false)]
 [CanEditMultipleObjects]
-[System.Serializable]
+[Serializable]
 public class BoardDataDrawer : Editor
 {
     private BoardData GameDataInstance => target as BoardData;

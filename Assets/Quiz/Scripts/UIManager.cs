@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[System.Serializable]
+[Serializable]
 public struct UIManagerParameters
 {
     [Header("Answers Options")] [SerializeField]
@@ -13,7 +12,7 @@ public struct UIManagerParameters
     public float Margins => margins;
 }
 
-[System.Serializable]
+[Serializable]
 public struct UIElements
 {
     [SerializeField] private RectTransform answersContentArea;
@@ -58,7 +57,7 @@ public class UIManager : MonoBehaviour
     {
         EraseAnswers();
 
-        float offset = 0/* - parameters.Margins*/;
+        float offset = 0;
         for (int i = 0; i < question.Answers.Length; i++)
         {
             AnswerData newAnswer = (AnswerData) Instantiate(answerPrefab, uiElements.AnswersContentArea);

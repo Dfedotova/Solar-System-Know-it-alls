@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -45,8 +44,8 @@ public class WordsGrid : MonoBehaviour
 
         var offset = new Vector2
         {
-            x = (squareRect.width /** squareTransform.localScale.x*/ + squareOffset) * 0.01f / offsetForLevel,
-            y = (squareRect.height /** squareTransform.localScale.y*/ + squareOffset) * 0.01f / offsetForLevel
+            x = (squareRect.width + squareOffset) * 0.01f / offsetForLevel,
+            y = (squareRect.height + squareOffset) * 0.01f / offsetForLevel
         };
 
         var startPosition = GetFirstSquarePosition();

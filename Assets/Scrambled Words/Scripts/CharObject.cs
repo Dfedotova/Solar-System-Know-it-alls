@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +5,6 @@ public class CharObject : MonoBehaviour
 {
     public char character;
     public Text text;
-    public Image image;
     public RectTransform rectTransform;
     public int index;
 

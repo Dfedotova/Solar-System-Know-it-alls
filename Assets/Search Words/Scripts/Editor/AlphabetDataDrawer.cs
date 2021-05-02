@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
 
 [CustomEditor(typeof(AlphabetData))]
 [CanEditMultipleObjects]
-[System.Serializable]
+[Serializable]
 public class AlphabetDataDrawer : Editor
 {
     private ReorderableList _alphabetPlainList;

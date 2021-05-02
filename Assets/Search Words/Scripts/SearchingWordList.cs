@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -176,7 +174,7 @@ public class SearchingWordList : MonoBehaviour
         var parentRect = this.GetComponent<RectTransform>();
         var squareSize = new Vector2(0f, 0f);
 
-        squareSize.x = squareRect.rect.width * squareRect.transform.localScale.x + offset; // TODO мб убрать оффсет
+        squareSize.x = squareRect.rect.width * squareRect.transform.localScale.x + offset; 
         squareSize.y = squareRect.rect.height * squareRect.transform.localScale.y + offset;
 
         var shiftBy = (parentRect.rect.width - (squareSize.x * _columns)) / 2;
@@ -185,6 +183,6 @@ public class SearchingWordList : MonoBehaviour
         startPosition.x += shiftBy;
         startPosition.y = (parentRect.rect.height - squareSize.y) / 2;
 
-        return startPosition / 30; // TODO
+        return startPosition / 30; 
     }
 }

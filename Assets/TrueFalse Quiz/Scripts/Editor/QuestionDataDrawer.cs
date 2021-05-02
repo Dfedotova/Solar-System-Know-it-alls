@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
 
 [CustomEditor(typeof(Questions))]
 [CanEditMultipleObjects]
-[System.Serializable]
+[Serializable]
 public class QuestionDataDrawer : Editor
 {
     private Questions QuestionsInstance => target as Questions;

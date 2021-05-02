@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -47,7 +46,7 @@ public class Spawner : MonoBehaviour
         panel.SetActive(false);
     }
 
-    IEnumerator SpawnRandomObject()
+    private IEnumerator SpawnRandomObject()
     {
         yield return new WaitForSeconds(Random.Range(1, 2));
 
@@ -60,7 +59,7 @@ public class Spawner : MonoBehaviour
             Instantiate(blackHole,
                 new Vector2(Random.Range(-xBounds, xBounds), yBound), Quaternion.identity);
 
-        if (Random.value <= 0.6f && level != 1)
+        if (Random.value <= 0.3f && level != 1)
             Instantiate(ufo,
                 new Vector2(Random.Range(-xBounds, xBounds), yBound), Quaternion.identity);
 

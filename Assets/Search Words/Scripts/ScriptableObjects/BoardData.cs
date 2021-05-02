@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu]
 public class BoardData : ScriptableObject
 {
-    public float timeInSeconds;
     public int columns = 0;
     public int rows = 0;
 
@@ -16,9 +14,7 @@ public class BoardData : ScriptableObject
     public void ClearWithEmptyString()
     {
         for (int i = 0; i < columns; i++)
-        {
             board[i].ClearRow();
-        }
     }
 
     public void CreateNewBoard()
@@ -61,9 +57,7 @@ public class BoardData : ScriptableObject
         public void ClearRow()
         {
             for (int i = 0; i < size; i++)
-            {
                 row[i] = string.Empty;
-            }
         }
     }
 }

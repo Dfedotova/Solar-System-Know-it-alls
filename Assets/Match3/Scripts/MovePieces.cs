@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovePieces : MonoBehaviour
 {
     public static MovePieces Instance;
+    
     private Match3 _game;
     private NodePiece _moving;
     private Point _newIndex;
