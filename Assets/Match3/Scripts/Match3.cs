@@ -108,12 +108,10 @@ public class Match3 : MonoBehaviour
                         _score += 10;
                         highScore -= 10;
                         scoreText.text = _score.ToString();
-
+                        levelScoreText.text = "Ты набрал " + _score + " очков!";
+                        
                         if (highScore <= 0)
-                        {
                             gameOverPanel.SetActive(true);
-                            levelScoreText.text = "Ты набрал " + _score + " очков!";
-                        }
                     }
 
                     node.SetPiece(null);

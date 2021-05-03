@@ -108,7 +108,7 @@ public class SearchingWordList : MonoBehaviour
             }
         }
 
-        return finalScale;
+        return finalScale / 1.2f;
     }
 
     private bool ShouldScaleDown(Vector3 targetScale)
